@@ -1,0 +1,14 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: auth-service
+
+jwt:
+  secret: "0OL3hz0pZb6pqe6yKvcHFwCqKwIaQZmT9RlSMfgcmRx"
+  expiration: 3600000
+
+services:
+  url-services:
+    url: "http://localhost:8081"
