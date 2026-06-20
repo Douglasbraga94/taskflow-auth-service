@@ -12,7 +12,7 @@ public class UserServiceClient {
     private final RestClient restClient;
     private final String userServiceUrl;
     public UserServiceClient(RestClient restClient,
-                             @Value("${services.url-services.url}") String userServiceUrl) {
+                             @Value("${services.user-service.url}") String userServiceUrl) {
         this.restClient = restClient;
         this.userServiceUrl = userServiceUrl;
     }

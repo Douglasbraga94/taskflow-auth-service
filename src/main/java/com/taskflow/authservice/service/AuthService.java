@@ -30,7 +30,7 @@ public class AuthService {
             throw new InvalidCredentialsException();
         }
 
-        if(user == null || !passwordEncoder.matches(request.password(), user.password())) {
+        if(user == null || !passwordEncoder.matches(request.password(), user.passwordHash())) {
             throw new InvalidCredentialsException();
         }
 
